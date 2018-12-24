@@ -1,23 +1,27 @@
 <template>
   <v-app>
     <v-content>
-      <AppHome/>
+      <app-toolbar></app-toolbar>
+      <router-view />
+      <app-footer></app-footer>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import AppHome from './components/AppHome'
+import AppFooter from "./components/AppFooter";
+import AppToolbar from "./components/AppToolbar";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    AppHome
+    AppToolbar,
+    AppFooter
   },
-  data () {
+  data() {
     return {
       //
-    }
+    };
   }
-}
+};
 </script>

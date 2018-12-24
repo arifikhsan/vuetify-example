@@ -1,7 +1,6 @@
 <template>
     <div>
-        <app-toolbar></app-toolbar>
-        <app-footer></app-footer>
+        Home Component
     </div>
 </template>
 

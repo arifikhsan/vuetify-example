@@ -1,12 +1,20 @@
 <template>
   <v-toolbar color="indigo" dark>
-    <v-toolbar-side-icon></v-toolbar-side-icon>
     <v-toolbar-title class="white--text">Bitfumes</v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat>About</v-btn>
-      <v-btn flat>Contact</v-btn>
-      <v-btn flat>Login</v-btn>
-    </v-toolbar-items>
+    <div class="hidden-sm-and-down">
+      <v-btn flat>
+        <router-link to="#">About</router-link>
+      </v-btn>
+      <v-btn flat>
+        <router-link to="#">Contact</router-link>
+      </v-btn>
+      <v-btn flat>
+        <router-link to="/login">Login</router-link>
+      </v-btn>
+      <router-link to="/login">
+        <v-btn flat>Login</v-btn>
+      </router-link>
+    </div>
   </v-toolbar>
 </template>
