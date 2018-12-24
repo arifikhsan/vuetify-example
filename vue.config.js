@@ -1,8 +1,10 @@
 module.exports = {
     devServer: {
-        watchOptions: {
-            hot: true,
-            poll: true
+        port: '8080',
+        hot: true,
+        disableHostCheck: true,
+        headers: {
+            'Access-Control-Allow-Origin': '*'
         }
     }
 }
